@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="382.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="VersionTwo.Controller">
+   <Pane layoutX="1.0" prefHeight="395.0" prefWidth="377.0">
+      <Button layoutX="307.0" layoutY="350.0" mnemonicParsing="false" onAction="#PLUToMain" text="Quit"/>
+      <Button layoutX="32.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleLookup" text="Lookup"/>
+      <Button fx:id="insert" onAction="#handleInsert" disable="true" layoutX="118.0" layoutY="350.0"
+              mnemonicParsing="false" text="Insert"/>
+      <Button fx:id="save" layoutX="193.0" onAction="#handleUpdate" layoutY="350.0" mnemonicParsing="false"
+              text="Save Changes"/>
+      <TextField fx:id="plu" layoutX="143.0" layoutY="113.0"/>
+      <Text layoutX="73.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter PLU"/>
+      <TextField fx:id="cost" layoutX="143.0" layoutY="148.0"/>
+      <Text layoutX="76.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost Price"/>
+      <TextField fx:id="retail" layoutX="143.0" layoutY="188.0"/>
+      <Text layoutX="73.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retail Price"/>
+      <TextField fx:id="qty" layoutX="143.0" layoutY="230.0"/>
+      <Text layoutX="62.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Case Quantity"/>
+      <Text layoutX="69.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name"/>
+      <TextField fx:id="name" layoutX="143.0" layoutY="267.0"/>
+      <Text layoutX="30.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Unit (EA/LB)"/>
+      <TextField fx:id="unit" layoutX="143.0" layoutY="304.0"/>
+      <Label layoutX="56.0" layoutY="10.0" text="ProducePOS">
+         <font>
+            <Font name="Gabriola" size="59.0"/>
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="46.0" text="V2.0">
+         <font>
+            <Font name="Impact" size="19.0"/>
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="67.0" text="PLU Maintenance">
+         <font>
+            <Font size="20.0"/>
+         </font>
+      </Label>
+   </Pane>
+</AnchorPane>

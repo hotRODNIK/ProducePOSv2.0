@@ -1,0 +1,4 @@
+Item name  Item PLU  Date  Number Sold  Cost Price   Retail Price  Profit on Item
+*********************************************************************************
+Bananas   4011   2020-04-23   1.45   0.59   0.77   0.53
+
